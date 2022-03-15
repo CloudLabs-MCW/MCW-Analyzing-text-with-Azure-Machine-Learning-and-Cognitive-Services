@@ -41,11 +41,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
     - [Task 2: Create a new automated ML run](#task-2-create-a-new-automated-ml-run)
     - [Task 3: Monitor automated ML run](#task-3-monitor-automated-ml-run)
     - [Task 4: Review best model performance](#task-4-review-best-model-performance)
-  - [Exercise 4: Completing the solution](#exercise-4-completing-the-solution)
-    - [Task 1: Retrieve the Text Analytics API endpoint and key](#task-1-retrieve-the-text-analytics-api-endpoint-and-key)
-    - [Task 2: Run notebook - 05 Cognitive Services](#task-2-run-notebook---05-cognitive-services)
-  - [After the hands-on lab](#after-the-hands-on-lab)
-    - [Task 1: Clean up lab resources](#task-1-clean-up-lab-resources)
+  
 
 # Analyzing text with Azure Machine Learning and Cognitive Services hands-on lab step-by-step
 
@@ -197,37 +193,5 @@ In this exercise, you learn how to create, run, and explore automated machine le
    ![Model metrics tab showing various model performance metrics and charts.](media/automl-08.png "Model Metrics")
 
    > **Note**: You have the option to deploy the trained model pipeline to either Azure Container Instance or Azure Kubernetes Service directly from the Azure ML Studio.
-
-## Exercise 4: Completing the solution
-
-Duration: 45 minutes
-
-In this exercise, you perform the final integration with the Text Analytics APIs and the Azure Machine Learning service you previously deployed to deliver the completed proof of concept solution.
-
-### Task 1: Retrieve the Text Analytics API endpoint and key
-
-In this task, you will retrieve the API key and endpoint URI associated with your Text Analytics API.
-
-1. In the [Azure portal](https://portal.azure.com), select **Resource groups** from the Azure services list.
-
-   ![Resource groups is highlighted in the Azure services list.](media/azure-services-resource-groups.png "Azure services")
-
-2. Select the `mcwailab-SUFFIX` resource group from the list of resource groups.
-
-    ![The hands-on-lab-SUFFIX resource group is highlighted in the list of resource groups.](media/resource-groups-1.png "Resource groups")
-
-3. Select your Text Analytics Cognitive Services resource from the list.
-
-    ![The computer vision resource is highlighted in the list of resources in the hands-on-lab-SUFFIX resource group.](media/resource-groups-2.png "Text Analytics resource")
-
-4. Select **Keys and Endpoint** from the left-hand navigation menu and then copy the **Key 1** and **Endpoint** values into a text editor, such as Notepad.exe, or something similar as you will need this value later in this exercise.
-
-    ![Keys and Endpoint in highlighted and selected in the left-hand navigation menu. The copy buttons for Key 1 and Endpoint are highlighted.](media/text-analytics-keys-and-endpoint.png "Text Analytics Keys and Endpoint")
-
-### Task 2: Run notebook - 05 Cognitive Services
-
-1. From within Azure Machine Learning Studio, navigate to the `Notebooks` section by selecting it from the left-hand navigation menu. Then select the notebook: **mcw-csdl/MCW-Analyzing-text-with-azure-machine-learning-and-cognitive-services/Hands-on lab/notebooks/05 Cognitive Services.ipynb**. This opens the notebook so you can read and execute the code it contains.
-
-2. Follow the steps within the notebook to complete the lab and view the result of combining Cognitive Services with your Azure Machine Learning Services.
 
 
